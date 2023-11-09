@@ -1,0 +1,442 @@
+@font-face {
+    font-family: 'android';
+    src: url(fonts/idroid.otf);
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #333;
+    width: 100%;
+    height: 100vh;
+}
+
+main{
+    max-width: 100%;
+    height: 100vh;
+    background-color: lightgray;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    height: 800px;
+    background-image: url(img/peeexels-leon-ardho-1552249.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+#logo img{
+    width: 45px;
+    height: 45px;
+    padding-top: 5px;
+}
+#cartaz{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    pointer-events: none;
+}
+#cartaz p{
+    color: orange;
+    font-size: 1.7em;
+    margin-bottom: 4.4em;
+    text-shadow: 1px 1px 2px black ;
+    font-family: 'android';
+    
+}
+section{
+    max-width:900px;
+    margin: 0 auto;
+    padding-top: 10px;
+    background-color: lightgray;
+}
+#part1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 30px;
+    
+}
+.image img{
+    width: 100%;
+}
+.text{
+    padding: 0px 20px 10px 20px;
+}
+.text h4{
+    font-size: 18px;
+    padding-left: 3px;
+    font-family: inter;
+    background-image: linear-gradient(to right, orange 80%, lightgray);
+}
+.text p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    
+}
+.saber-mais{
+    margin: 0 auto;
+    background-image:linear-gradient(to bottom, orange 80%, lightgray);
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.saber-mais:hover{
+    background-image:linear-gradient(to bottom, orange 100%, lightgray);
+    transition: .3s ease;
+}
+.saber-mais a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: inter;
+}
+#saber-mais2{
+    background-image: linear-gradient(to bottom, lightgray 80%, orange);
+    transition: .3s ease;
+}
+#saber-mais2:hover{
+    background-image: linear-gradient(to bottom, lightgray 100%, orange);
+    transition: .3s ease;
+}
+.contacte-nos{
+    margin: 0 auto;
+    background-image: linear-gradient(to bottom, black 80%, lightgray);
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacte-nos:hover{
+    background-image: linear-gradient(to bottom, black 100%, lightgray);
+    transition: .3s ease;
+}
+.contacte-nos a{
+    text-decoration: none;
+    color: orange;
+    font-weight: bolder;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: inter;
+}
+#contacte-nos2{
+    margin: 0px;
+}
+
+/*Beneficios*/
+#aside{
+    background-color: orange;
+    padding-top: 10px;
+}
+#aside h1{
+    text-align: center;
+    font-family: inter;
+    font-size: 22px;
+}
+#beneficios{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-content: center;
+    column-gap: 10px;
+}
+.benef{
+    
+    box-shadow: 1px 2px 7px 0px rgba(0, 0, 0, 0.534);
+    height:250px;
+    text-align: center;
+    background-color: lightgray;
+}
+.benef h4{
+    font-family: inter;
+}
+.benef p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+/* Nossos TREINADORES */
+#treinadores{
+    margin-top: 30px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 400px 300px;
+    justify-content: center;
+    gap: 30px;
+}
+#texto p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+
+.personal-nome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, lightgray 80%, orange);
+    height: 30px;
+    margin-bottom: 5px;
+}
+.personal-nome p{
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: inter;
+    
+}
+.image-treinador img{
+    width: 100%;
+}
+footer{
+    background-image: linear-gradient(to bottom, orange, lightgray);
+}
+#container-foot{
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    justify-content: center;
+    gap: 20px;
+    padding-top: 25px;
+}
+.fotos{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    
+}
+.foto-tamanho{
+    width: 200px;
+    height: 250px;
+}
+.foto-tamanho img{
+    width: 100%;
+}
+#foto1{
+    padding-top: 60px;
+    transition: .3s linear;
+}
+.foto-tamanho::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.2rem;
+    background-color: rgba(255, 166, 0, 0.74);
+    position: absolute;
+    margin-top: 10px;
+}
+#foto1:hover{
+    transform: translateY(-5px);
+    transition: .3s linear;
+}
+#foto2{
+    padding-top: 30px;
+    transition: .3s linear;
+}
+#foto2:hover{
+    transform: translateY(-5px);
+    transition: .3s linear;
+}
+#foto3{
+    transition: .3s linear;
+}
+#foto3:hover{
+    transform: translateY(-5px);
+    transition: .3s linear;
+}
+#infor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+}
+#info1{
+    padding: 20px 20px 20px 60px;
+}
+#info1 h4, #info2 h1{
+    font-family: inter;
+}
+#info1 p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.3em;
+    margin: 0px;
+}
+#info2{
+    padding: 20px 20px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#dados{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 26px;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.726);
+    margin-top: 15px;
+}
+#dados input{
+    width: 300px;
+    height: 26px;
+    border: 1px solid rgba(70, 68, 68, 0.596);
+    border-right: none;
+    padding-left: 5px;
+    transition: .4s ease;
+}
+#dados input::placeholder{
+    font-size: 13px;
+}
+#dados input:focus-visible{
+    outline: none;
+}
+#dados input:hover{
+    border: 1px solid rgba(255, 166, 0, 0.637);
+    transition: .4s ease;
+}
+#span1{
+    font-size: 12px;
+    color: green;
+    padding-left: 5px;
+    padding-top: 3px;
+    display: none;
+}
+#span2{
+    font-size: 12px;
+    color: rgb(233, 34, 34);
+    padding-left: 5px;
+    padding-top: 3px;
+    display: none;
+}
+#dados #entrar{
+    width: 80px;
+    height: 28px;
+    border-left: none;
+    background-color: orange;
+    font-weight: 600;
+    font-family: inter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .4s ease;
+}
+#dados #entrar:hover{
+    background-color: rgba(255, 166, 0, 0.719);
+    transition: .4s ease;
+}
+
+#fim{
+    margin-top: 20px ;
+    margin-right: 20px;
+    display: flex;
+    justify-content: end;
+}
+#fim p{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 800;
+    border: 1px solid black;
+    height: 10px;
+    padding: 5px;
+}
+#fim a{
+    text-decoration: none;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width:855px) {
+    #aside h1{
+    font-size: 20px;
+}
+#beneficios{
+    display: grid;
+    grid-template-columns: 180px 180px 180px 180px;
+}
+.benef{
+    height:200px;
+}
+.benef p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.5em;
+}
+body{
+    overflow-x: hidden;
+}
+#treinadores{
+    margin-top: 30px;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 300px 200px;
+    justify-content: center;
+    gap: 30px;
+}
+#texto p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 1.5em;
+}
+.personal-nome p{
+    font-size: 13px;
+}
+}
+@media (max-width:755px) {
+    #beneficios{
+    display: grid;
+    grid-template-columns: 220px 220px ;
+    row-gap: 10px;
+}
+.benef{
+    height:250px;
+}
+#treinadores{
+    margin-top: 30px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px;
+}
+#container-foot{
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: repeat(3, 400px);
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.foto-tamanho{
+    width: 300px;
+    height: 400px;
+}
+.foto-tamanho::after{
+    display: none;
+}
+
+}
+
+@media (max-width: 575px) {
+    
+#infor{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 150px 150px ;
+    justify-content: center;
+    row-gap: 15px;
+    
+}
+.text h4{
+    font-size: 16px;
+}
+.text p{
+    font-size: 13px;
+}
+
+}

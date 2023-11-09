@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Galeria</title>
+	<link rel="shortcut icon" href="icon/gym_icon.png" type="image/x-icon">
+	<link rel="stylesheet" href="style-galery.css">
+</head>
+<body>
+	<section>
+		
+			<div>
+					<h1> Nossa Galeria</h1>
+			</div>
+			<div id="icon-cruz"><img src="icon/cruz.svg" alt=""></div>
+		
+		<div id="box">
+			<div id="grelha">
+					<div class="imagens item1">
+						<img src="img/pexels-bruna-gabrielle-félix-13883809.jpg" alt="">
+					</div>
+					<div class="imagens item2">
+						<img src="img/pexels-andrea-piacquadio-3839058.jpg" alt="">
+					</div>
+					<div class="imagens item3">
+						<img src="img/pexels-jonathan-borba-3076516.jpg" alt="">
+					</div>
+					<div class="imagens item4">
+						<img src="img/pexels-karl-solano-2780762.jpg" alt="">
+					</div>
+					<div class="imagens item5">
+						<img src="img/pexels-victor-freitas-841130.jpg" alt=""  id="slider">
+						
+					</div>
+					
+			</div>
+			<div id="cont"><p class="contacto">
+				<a href="pag-contacte-nos.html" target="_self">contacte-nos</a>
+				</p>
+			</div>
+	</div>
+<script>
+		var fechar = document.querySelector('#icon-cruz')
+		fechar.style.cursor= 'pointer'
+
+	fechar.onclick = e=>{
+		var fechar = document.querySelector('#icon-cruz')
+		window.location.href = 'index.html'
+	}
+
+		
+	</script>
+
+</body>
+</html>

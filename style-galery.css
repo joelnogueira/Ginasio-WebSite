@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Cookie&family=Hanken+Grotesk:wght@500;700;800&family=Kalam:wght@300;400&family=Outfit:wght@400;700&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/patrick-tomasso-QMDap1TAu0g-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+div h1{
+    font-family: 'Kalam', cursive;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: orange;
+    text-transform: uppercase;
+    font-family: inter;
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+    padding-bottom: 10px;
+    text-shadow: 0px 1px black;
+}
+
+#icon-cruz{
+    position: absolute;
+    top: 30px;
+    left: 90%;
+    background-color: orange;
+    border-radius: 50%;
+    border: none;
+    width:  30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s linear;
+}
+#icon-cruz:hover{
+    background-color: transparent;
+    border: 2px solid orange;
+    transition: .2s linear;
+    
+}
+#icon-cruz img{
+    width:  20px;
+    height: 20px;
+    border: none;
+}
+#box{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 1060px;
+    height: 650px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#grelha{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-template-areas: 
+    "um dois tres"
+    "um quatro cinco";
+    
+}
+.item1{
+    grid-area: um;
+}
+.item2{
+    grid-area: dois;
+}
+.item3{
+    grid-area: tres;
+}
+.item4{
+    grid-area: quatro;
+}
+.item5{
+    grid-area: cinco;
+    display: flex;
+    overflow: hidden;
+    transition: 2s;
+    width: 350px;
+}
+.item6{
+    grid-area: seis;
+}
+
+.imagens{
+    width: 350px;
+}
+.imagens img{
+    width: 100%;
+}
+
+/* CONTACTE-NOS */
+
+.contacto{
+    background-image: linear-gradient(to bottom, black 80%, lightgray);
+    width: 150px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacto:hover{
+    background-image: linear-gradient(to bottom, black 100%, lightgray);
+    transition: .3s ease;
+}
+.contacto a{
+    text-decoration: none;
+    color: orange;
+    font-weight: bolder;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: inter;
+}
+
+/* RESPONSIVIDADE*/
+@media (max-width: 1090px){
+    #grelha{
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: 250px;
+        grid-template-areas: 
+        "um dois tres"
+        "um quatro cinco";
+        
+    }
+    #box{
+    width: 800px;
+    height: 650px;
+    }
+    .imagens{
+        width: 250px;
+    }
+}
+@media (max-width: 820px){
+    #grelha{
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: 250px ;
+        grid-template-areas: 
+        "um um"
+        "dois tres"
+        "quatro cinco";
+    }
+    .imagens{
+        width: 200px;
+    }
+    #box{
+        width: 450px;
+        height: 600px;
+    }
+    div h1{
+        margin-top: 20px;
+        padding-top: 10px;
+    }
+}
